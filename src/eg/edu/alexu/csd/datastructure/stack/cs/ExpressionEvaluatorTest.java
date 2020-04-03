@@ -165,8 +165,8 @@ class ExpressionEvaluatorTest {
     void evaluate() {
         ExpressionEvaluator test = new ExpressionEvaluator();
         ///////////////////////////ordinary tests 1/////////////////////////////////////////////////////////////////////
-        String s = "2 6 * 2 +";
-        assertEquals(14,test.evaluate(s));
+        String s = "0";
+        assertEquals(0,test.evaluate(s));
         String s1 ="1 2 + 7 *";
         assertEquals(21,test.evaluate(s1));
         ////////////////////////test 2 more than one digit\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
