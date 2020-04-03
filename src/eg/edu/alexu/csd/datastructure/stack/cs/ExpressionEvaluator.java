@@ -253,9 +253,12 @@ public class ExpressionEvaluator implements IExpressionEvaluator {
             throw new NullPointerException("Expression Not Found");
         int len = expression.length();
         char ch1 = expression.charAt(0);
+        int yu = expression.charAt(0);
         final boolean b = ch1 == '0' || ch1 == '1' || ch1 == '2' || ch1 == '3' || ch1 == '4' || ch1 == '5' || ch1 == '6' || ch1 == '7' || ch1 == '8' || ch1 == '9';
-        if (len==1 && b)
-            return expression.charAt(0);
+        if (len==1 && b) {
+            return yu-48;
+
+        }
         else if (len==1)
             throw new ArithmeticException("Wrong Expression");
 
